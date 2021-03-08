@@ -3,10 +3,20 @@
 }
 
 .weather-wrapper{
-
   input{
     position: absolute;
+    width: 290px;
     top: 120px;
-    margin-left: 5%;
+    border: none;
+    font-size: 30px;
+    color: rgba(54, 53, 53, 0.63);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 2px solid rgba(43, 202, 141, 0.473);
+    &:focus{
+      border: none;
+      outline: none;
+      border-bottom: 2px solid rgba(5, 247, 154, 0.514);
+      transition: all 1s ease-in-out;
+    }
   }
 }
