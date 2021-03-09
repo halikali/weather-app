@@ -6,6 +6,7 @@ body {
 	min-height: 100vh;
 	min-width: 100vw;
 	font-family: sans-serif;
+	overflow-x: hidden;
   }
   
   .container {
@@ -36,7 +37,7 @@ body {
 	padding: 0;
 	color: #ffffffdd;
 	font-weight: 700;
-	font-size: 6em;
+	font-size: 5em;
   }
   
   .summary {
@@ -189,4 +190,30 @@ body {
 	margin-left: -20px;
 	box-shadow: 0px 0px 5px #53e2bc;
   }
+
   
+  .seven-days{
+	  display: flex;
+	  width: 70%;
+	  margin-top: 50px;
+	  position: absolute;
+	  left: 15%;
+	  height: 700px;
+ 	}
+
+	.three-days-wrapper{
+		display: flex;
+		width: 90%;
+		justify-content: space-evenly;
+	}
+
+	@media screen and (max-width:1340px) {
+    .seven-days{
+		left: 19%;
+		flex-direction: column;
+	}
+	.three-days-wrapper{
+		margin-bottom: 25px;
+	}
+      
+    }
