@@ -1,8 +1,10 @@
 import {useEffect, useState} from 'react';
+import Moment from 'react-moment';
 import '../Components/App.scss';
 import '../Components/Card.css'
 
-const App = () => {
+
+const App = (props) => {
 
   const [location, setLocation] = useState('Istanbul');
   const [weatherInfo, setWeatherInfo] = useState({})
@@ -65,7 +67,7 @@ const App = () => {
               {weatherInforForSevenDays.map(item => (
              <div className="three-days-wrapper">
                   <div className="container" id="container">
-                <span className="city">{item.date}  </span>
+                <span className="city"> <Moment format="DD.MM.YY" >{item.date}</Moment>  </span>
                 <span className="temp">{item.day.avgtemp_c} &#176;C</span>
                 <div className="wcloud">
                   <div className="cloud1" style={{backgroundColor: 'white', boxShadow: 'none'}}></div>
